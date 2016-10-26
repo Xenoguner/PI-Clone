@@ -1,7 +1,14 @@
-<div class="jumbotron">
+<div class="jumbotron center" >
     <h1>Excellent =)</h1>
-    <%= link_to 'Login', new_user_session_path, class: 'btn btn-info' %>
-    <%= link_to 'Join', new_user_registration_path, class: 'btn btn-info' %>
+    
+    <% if user_signed_in? %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-info' %>
+        <%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-info' %>
+        <%= link_to 'Pins List', pins_path, class: 'btn btn-info' %>
+    <% else %>
+        <%= link_to 'Login',new_user_session_path, class: 'btn btn-info' %>
+        <%= link_to 'Join', new_user_registration_path, class: 'btn btn-info' %>
+    <% end %>
 </div>
 
 <p>This will be a workable app someday.</p>

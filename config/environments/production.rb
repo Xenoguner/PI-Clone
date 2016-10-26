@@ -79,4 +79,6 @@ Rails.application.configure do
   
   #Added as per devise installation instructions
   config.action_mailer.default_url_options = { host: 'rubypractice-xenoguner.c9users.io' }
+  
+  config.serve_static_files = true
 end

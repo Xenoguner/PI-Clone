@@ -41,4 +41,6 @@ Rails.application.configure do
   
   # Added as per advise installation instructions
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  config.serve_static_files = true
 end

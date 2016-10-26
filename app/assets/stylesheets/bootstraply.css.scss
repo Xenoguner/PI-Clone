@@ -1,5 +1,13 @@
+$navbar-height: 50px;
+$navbar-default-bg: #8DEEEE;
+$jumbotron-bg: #D1EEEE;
 
-
+$panel-default-heading-bg: #B0E2FF;
+$panel-footer-bg: #B0E2FF;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center {
+    text-align: center;
+}

@@ -55,7 +55,6 @@ class PinsController < ApplicationController
       end
     end
   end
-
   # DELETE /pins/1
   # DELETE /pins/1.json
   def destroy
@@ -80,6 +79,6 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit(:description)
+      params.require(:pin).permit(:description, :image)
     end
 end

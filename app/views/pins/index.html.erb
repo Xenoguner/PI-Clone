@@ -1,3 +1,5 @@
+<%= render 'home/jumbo' unless user_signed_in? %>
+
 <div id="pins" class="transitions-enabled">
     <% @pins.each do |pin| %>
     <div class="box">
@@ -5,6 +7,7 @@
         <%= link_to image_tag(pin.image.url), pin %><br/>
           <div class="panel-body">
            <%= pin.description %><br/>
+           <%= pin.user.name if pin.user %><br/>
           </div>
         <% if pin.user == current_user %>
         <div class="panel-footer">

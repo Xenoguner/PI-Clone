@@ -1,9 +1,13 @@
-$navbar-height: 50px;
-$navbar-default-bg: #8DEEEE;
-$jumbotron-bg: #D1EEEE;
+$navbar-height: 40px;
+$navbar-default-bg: #3ed4f9;
+$jumbotron-bg: #B0E2FF;
 
 $panel-default-heading-bg: #B0E2FF;
-$panel-footer-bg: #B0E2FF;
+$panel-footer-bg: #edf830;
+
+$navbar-default-brand-color: #3f22f8;
+
+$body-bg: #e5e5e5;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";

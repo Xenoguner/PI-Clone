@@ -1,15 +1,20 @@
 <div class="jumbotron center" >
     <h1>Let's Art!</h1>
     
+    <br/>
     <% if user_signed_in? %>
-        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-info' %>
-        <%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-info' %>
-        <%= link_to 'Pins List', pins_path, class: 'btn btn-info' %>
+        <%= link_to 'Pins', pins_path, class: 'btn btn-default' %>
+        <%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-default' %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-default' %>
+        
     <% else %>
-        <%= link_to 'Login',new_user_session_path, class: 'btn btn-info' %>
-        <%= link_to 'Join', new_user_registration_path, class: 'btn btn-info' %>
+        <%= link_to 'Login', new_user_session_path, class: 'btn btn-default' %>
+        <%= link_to 'Join', new_user_registration_path, class: 'btn btn-primary' %>
     <% end %>
 </div>
 
 <p>For amateur artists</p>
 <p>Got an art piece you want to share? Show it off!</p>
+
+
+
